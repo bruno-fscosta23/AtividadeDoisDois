@@ -35,5 +35,36 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="26dp"
+                android:background="@drawable/barra_pesquisa"
+                android:drawableLeft="@drawable/ic_search"
+                android:hint="Search"
+                android:padding="10dp"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/food"
+                android:layout_marginLeft="27dp"
+                android:text="Food"
+                android:drawableTop="@drawable/ic_local_dining"
+                android:padding="30dp"/>
+
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
