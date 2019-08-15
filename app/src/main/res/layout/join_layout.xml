@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_join"
+    android:orientation="vertical"
+    tools:context=".Join_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:text="Join the Adventure!"
+            android:textAlignment="center"
+            android:textColor="#A67826"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="39dp"
+            android:hint="Adventurer Name"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="99dp"
+            android:layout_marginRight="40dp"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="40dp"
+            android:hint="Password"
+            android:padding="15dp"
+            android:textColorHint="#fff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/botao_join"
+            android:text="Create my Account"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="or login with"
+            android:textAlignment="center"
+            android:textColor="#A67826"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:background="@drawable/twitter"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_sentiment_satisfied"
+            android:paddingLeft="18dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/twitter"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_person_pin"
+            android:paddingLeft="18dp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/twitter"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_bluetooth_audio"
+            android:paddingLeft="18dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/bottom_join"
+            android:paddingTop="15dp"
+            android:text="I'm Already an Adventurer"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</LinearLayout>
