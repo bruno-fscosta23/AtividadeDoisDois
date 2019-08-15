@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/fundo_univer"
+    android:orientation="vertical"
     tools:context=".University_Activity">
 
     <RelativeLayout
@@ -15,13 +15,14 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:text="State University"
-            android:textColor="#fff"
             android:textAlignment="center"
-            android:textSize="45dp"
-            android:layout_margin="10dp"/>
+            android:textColor="#fff"
+            android:textSize="45dp" />
 
     </RelativeLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -29,29 +30,77 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#fff"
             android:layout_marginLeft="39dp"
-            android:layout_marginRight="270dp"
             android:layout_marginTop="15dp"
-            />
+            android:layout_marginRight="270dp"
+            android:background="#fff" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="since 1935"
-            android:textColor="#fff"
-            android:textSize="20sp"
             android:textAlignment="center"
-            />
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#fff"
             android:layout_marginLeft="270dp"
-            android:layout_marginRight="40dp"
             android:layout_marginTop="15dp"
-            />
+            android:layout_marginRight="40dp"
+            android:background="#fff" />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <Button
+            android:id="@+id/btnAbout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/about_us"
+            android:drawableTop="@drawable/ic_account_balance"
+            android:paddingTop="30dp"
+            android:text="About Us"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnEvents"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/events_us"
+            android:drawableTop="@drawable/ic_date_range"
+            android:paddingTop="30dp"
+            android:text="Events"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/btnAbout"/>
+
+        <Button
+            android:id="@+id/btnCurriculo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/curricu_us"
+            android:drawableTop="@drawable/ic_access_time"
+            android:paddingTop="30dp"
+            android:text="Curriculum"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_below="@+id/btnAbout"/>
+
+
+    </RelativeLayout>
 
 </LinearLayout>
