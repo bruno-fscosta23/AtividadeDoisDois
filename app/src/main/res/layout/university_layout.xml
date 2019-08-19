@@ -52,55 +52,137 @@
             android:background="#fff" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:id="@+id/btnAbout"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/about_us"
-            android:drawableTop="@drawable/ic_account_balance"
-            android:paddingTop="30dp"
-            android:text="About Us"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="20sp" />
-
-        <Button
-            android:id="@+id/btnEvents"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/events_us"
-            android:drawableTop="@drawable/ic_date_range"
-            android:paddingTop="30dp"
-            android:text="Events"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:layout_toRightOf="@+id/btnAbout"/>
-
-        <Button
-            android:id="@+id/btnCurriculo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="39dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/curricu_us"
-            android:drawableTop="@drawable/ic_access_time"
-            android:paddingTop="30dp"
-            android:text="Curriculum"
-            android:textAllCaps="false"
-            android:textColor="#fff"
-            android:textSize="20sp"
-            android:layout_below="@+id/btnAbout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/about_us"
+                android:drawableTop="@drawable/ic_account_balance"
+                android:paddingTop="30dp"
+                android:text="About Us"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnEvents"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/btnAbout"
+                android:background="@drawable/events_us"
+                android:drawableTop="@drawable/ic_date_range"
+                android:paddingTop="30dp"
+                android:text="Events"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnCurriculo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnAbout"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/curricu_us"
+                android:drawableTop="@drawable/ic_access_time"
+                android:paddingTop="30dp"
+                android:text="Curriculum"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnNews"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnEvents"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/btnCurriculo"
+                android:background="@drawable/news"
+                android:drawableTop="@drawable/ic_assignment"
+                android:paddingTop="30dp"
+                android:text="News"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSports"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnCurriculo"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sports"
+                android:drawableTop="@drawable/ic_whatshot"
+                android:paddingTop="30dp"
+                android:text="Sports"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnContacts"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnNews"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/btnSports"
+                android:background="@drawable/contact"
+                android:drawableTop="@drawable/ic_location"
+                android:paddingTop="30dp"
+                android:text="Contacts"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnFace"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnSports"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/facebook"
+                android:drawableTop="@drawable/ic_location_face"
+                android:paddingTop="30dp"
+                android:text="Facebook"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+            <Button
+                android:id="@+id/btnTwitter"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnContacts"
+                android:layout_toRightOf="@+id/btnFace"
+                android:layout_marginLeft="39dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/twitter_us"
+                android:drawableTop="@drawable/ic_location_twitter"
+                android:paddingTop="30dp"
+                android:text="Twitter"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
 </LinearLayout>
