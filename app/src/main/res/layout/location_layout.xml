@@ -43,15 +43,110 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:orientation="vertical"
-        android:background="#BAC2C7">
+        android:layout_height="180dp"
+        android:background="#BAC2C7"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_place_dois_location"
-            android:layout_gravity="center"/>
-
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_place_dois_location" />
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnBeer"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bar"
+            android:padding="13dp"
+            android:src="@drawable/ic_local_bar" />
+
+        <TextView
+            android:id="@+id/fntBeer"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBeer"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:text="Beer"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnBank"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btnBeer"
+            android:background="@drawable/card"
+            android:padding="13dp"
+            android:src="@drawable/ic_card" />
+
+        <TextView
+            android:id="@+id/fntBank"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnBeer"
+            android:layout_marginLeft="120dp"
+            android:layout_toRightOf="@+id/fntBeer"
+            android:gravity="center"
+            android:text="Card/ATM"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnCoffee"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/fntBeer"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/coffee"
+            android:padding="13dp"
+            android:src="@drawable/ic_coffee" />
+
+        <TextView
+            android:id="@+id/fntCoffee"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCoffee"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:text="Coffee Shops"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnConcerts"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/fntBeer"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/btnCoffee"
+            android:background="@drawable/coffee"
+            android:padding="13dp"
+            android:src="@drawable/ic_coffee" />
+
+        <TextView
+            android:id="@+id/fntConcerts"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnConcerts"
+            android:layout_marginLeft="235dp"
+            android:gravity="center"
+            android:text="Coffee Shops"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
 </LinearLayout>
